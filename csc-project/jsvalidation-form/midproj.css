@@ -1,0 +1,326 @@
+img {
+	height: 50px;
+	width: 50px;
+}
+
+#header {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ucuheader {
+	font-family: "lato", sans-serif;
+	font-size: 20px;
+	color: white;
+	padding-top: 10px;
+	color: #00655b;
+}
+
+
+#banner {
+	background: url('Gradient.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 350px;
+	position: fixed;
+	top: 70px;
+
+}
+#banner h2 {
+	margin: 120px auto;
+	color: #fff;
+	letter-spacing: 4px;
+	font-size: 40px;
+	vertical-align: middle;
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 3px 5px rgba(0,0,0,0.7);
+}
+
+
+#content {
+	width: 100%;
+	position: relative;
+	top: 400px;
+	background: #ebebeb;
+	height: px;
+	color: #666;
+	font-size: px;
+
+}
+
+
+
+
+.Admission {
+	display: inline;
+	padding-right: 20px;
+}
+
+
+
+
+/*<!---PARALLAX EFFECT-->*/
+body, html {
+	height: 100%;
+	color: #666;
+}
+
+#pimg2, #pimg3{
+	position: relative;
+	opacity: 0.7;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#pimg2 {
+	background-image: url('unnamed.jpg');
+	min-height: 400px;
+	
+}
+
+#pimg3 {
+	background-image: url('pic-025.jpg');
+	min-height: 400px;
+	
+}
+
+/*----------------------*/
+
+
+
+
+img {
+	height: 50px;
+	width: 50px;
+}
+#header {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#ucuheader {
+	font-family: "lato", sans-serif;
+	font-size: 20px;
+	padding-top: 10px;
+	color: #00655b;
+}
+
+#space {
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+body, html {
+	height: 100%;
+	color: #666;
+	font-size: 16px;
+	margin: 0;
+	font-weight: 400;
+}
+
+#pimg2, #pimg1, #pimg3{
+	position: relative;
+	opacity: 1;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+
+
+
+#light, #dark {
+	
+	padding-bottom: 20px;
+}
+
+#light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+#dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+#ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 29px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+
+}
+
+#border {
+	background-color: #111;
+	color: #fff;
+	padding: 10px;
+	opacity: 0.7;
+}
+
+/*input style*/
+#darktext {
+	background-color: #3b4956;
+	color: #fff;
+}
+
+
+#dark input[type="date"] {
+	background-color: #3b4956;
+}
+
+
+
+
+footer {
+	width: 100%;
+	background-color: #222;
+	padding:70px 0px;
+}
+
+#dark #number {
+	color: #e6ec8e;
+}
+#light #number {
+	color: #666;
+}
+
+
+
+#divider {
+	position: relative;
+	height: 50px;
+	width: auto;
+	background: none;
+
+}
+
+hr {
+	 display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #666;
+	
+}
+
+#button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: none;
+	font-family: arial;
+	padding: 15px 40px;
+	border: 2px solid white;
+	outline: 1px solid rgba(255,255,255,.7);
+	transition: all .7s;
+
+}
+
+#button:hover {
+	text-shadow: 0 0 20px rgba(255,255,255,1);
+	box-shadow: inset 0 0 20px rgba(255,255,255,.2),
+				0 0 20px rgba(255,255,255,0.3);
+}
+
+select {
+	border-radius: 4px;
+	background-color: #3b4956;
+	padding: 7px;
+	color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#dateandtime {
+	border-radius: 4px;
+	background-color: #3b4956;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 1px;
+	padding-right: 1px;
+	color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#inputfile {
+	display: none;
+}
+
+#hideinput {
+	visibility: hidden;
+}
+
+#uploadpic {
+	float: right;
+	width: 180px;
+    height: 190px;
+    margin-right: 70px;
+    
+    text-align: center;
+    background-color: #3b4956;
+}
+
+#uploadpic:link, #uploadpic:visited {
+	background-color: #3b4956;
+    color: black;       
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    border: 2px solid black;
+    text-decoration: none;
+}
+#uploadpic:hover, #uploadpic:active {
+	background-color: #282e34;
+	color: white;
+}
+
+#errorRequirements, #errorAdmission, #errorChoice,
+#errorChoice2, #errorChoice3, #errorSem, #errorSy, #errorLastname
+, #errorfname, #errormname, #errorpb, #errorgender, #errorstatus, #errormonth,
+#errordays, #erroryears, #erroraddstreet1, #erroraddapart1, #erroraddcity1,
+#erroraddprov1, #errorzip1, #errorcontact, #erroremail,
+#errorguardian, #errorguardiancontact, #errornameofsch, #errorschadd, #errorfchoice, #errorfmajor,
+#errorschoice, #errorsmajor, #errorcchoice, #errorcmajor,
+#errorreason, #errorrelative, #errorhc1, #erucu, #errorsource, #eflname, 
+#effname, #efmname, #efcontact, #efoccupation, #efea, #emonth, #edays, #eyears,
+#emlname, #emfname, #emmname, #emcontact, #emoccupation, #emea,
+#emonth1, #edays1, #eyears1, #edays4, #emonth4, #eyears4,
+#enos, #ereligion, #enationality, #eapart2, #estreet2, #ecity2,
+#enobro, #enosis, #eea, #eoccu3, #enosofc, #enosgirls, #enosboys, #eadmission{
+	font-size:.8em; 
+	color: red;
+}
+
+

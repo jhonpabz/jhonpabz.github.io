@@ -1,0 +1,299 @@
+
+
+
+
+
+
+body, html {
+	height: 100%;
+	color: #666;
+	font-size: 16px;
+	margin: 0;
+	font-weight: 400;
+}
+
+
+img {
+	height: 50px;
+	width: 50px;
+}
+#header {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#ucuheader {
+	font-family: "lato", sans-serif;
+	font-size: 20px;
+	padding-top: 10px;
+	color: #00655b;
+}
+
+#space {
+	margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+#pimg2, #pimg1, #pimg3{
+	position: relative;
+	opacity: 1;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+
+}
+
+#pimg1 {
+	background-image: url('pic-025.jpg');
+	min-height: 100%;
+	
+}
+
+#pimg2 {
+	background-image: url('unnamed.jpg');
+	min-height: 400px;
+	
+}
+
+#pimg3 {
+	background-image: url('ucupic3.jpg');
+	min-height: 400px;
+	
+}
+
+
+#light, #dark {
+	
+	padding-bottom: 20px;
+}
+
+#light {
+	background-color: #f4f4f4;
+	color: #666;
+}
+
+#dark {
+	background-color: #282e34;
+	color: #ddd;
+}
+
+#ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
+	font-size: 29px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+
+}
+
+#border {
+	background-color: #111;
+	color: #fff;
+	padding: 10px;
+	opacity: 0.7;
+}
+
+/*input style*/
+#darktext {
+	background-color: #3b4956;
+	color: #fff;
+}
+
+
+#dark input[type="date"] {
+	background-color: #3b4956;
+}
+
+
+
+
+footer {
+	width: 100%;
+	background-color: #222;
+	padding:70px 0px;
+}
+
+#dark #number {
+	color: #e6ec8e;
+}
+#light #number {
+	color: #666;
+}
+
+
+/*input style*/
+#dark #jhonlabel {
+	display: block;
+	position: relative;
+	top: -20px;
+	left: 0px;
+	color: #999;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	z-index: 1;
+	transition: all 0.3s ease;
+}
+#jhonlabel {
+	display: block;
+	position: relative;
+	top: -20px;
+	left: 0px;
+	color: #999;
+	font-family: 'Helvetica', sans-serif;
+	font-size: 16px;
+	z-index: 1;
+	transition: all 0.3s ease;
+
+}
+
+#dark #jhoninput {
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	z-index: 2;
+	color: white;
+}
+
+#light #jhoninput {
+	display: block;
+	position: relative;
+	background: none;
+	border: none;
+	border-bottom: 1px solid #ddd;
+	width: 100%;
+	font-family: 'Helvetica', sans-serif;
+	font-weight: bold;
+	font-size: 16px;
+	z-index: 2;
+	color: black;
+}
+
+#light #jhoninput:focus, #light #jhoninput:valid {
+	outline: none;
+	border-bottom: 1px solid #00aced;
+}
+
+#dark #jhoninput:focus, #dark #jhoninput:valid {
+	outline: none;
+	border-bottom: 1px solid #00aced;
+}
+
+#jhoninput:focus + #jhonlabel, #jhoninput:valid + #jhonlabel{
+	top: -40px;
+	font-size: 11px;
+	color: #00aced;
+}
+
+#divider {
+	position: relative;
+	height: 50px;
+	width: auto;
+	background: none;
+
+}
+
+hr {
+	 display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: #666;
+	
+}
+
+#button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+	text-decoration: none;
+	font-family: arial;
+	padding: 15px 40px;
+	border: 2px solid white;
+	outline: 1px solid rgba(255,255,255,.7);
+	transition: all .7s;
+
+}
+
+#button:hover {
+	text-shadow: 0 0 20px rgba(255,255,255,1);
+	box-shadow: inset 0 0 20px rgba(255,255,255,.2),
+				0 0 20px rgba(255,255,255,0.3);
+}
+
+select {
+	border-radius: 4px;
+	background-color: #3b4956;
+	padding: 7px;
+	color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#dateandtime {
+	border-radius: 4px;
+	background-color: #3b4956;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	padding-left: 1px;
+	padding-right: 1px;
+	color: #fff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+	0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+#inputfile {
+	display: none;
+}
+
+#hideinput {
+	visibility: hidden;
+}
+
+#uploadpic {
+	float: right;
+	width: 180px;
+    height: 190px;
+    margin-right: 70px;
+    
+    text-align: center;
+    background-color: #3b4956;
+}
+
+#uploadpic:link, #uploadpic:visited {
+	background-color: #3b4956;
+    color: black;       
+    padding-top: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+    text-align: center;
+    border: 2px solid black;
+    text-decoration: none;
+}
+#uploadpic:hover, #uploadpic:active {
+	background-color: #282e34;
+	color: white;
+}

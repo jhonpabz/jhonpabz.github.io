@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UCU Form</title>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="midproj.css">
+    <link rel="shortcut icon" href="UCU_logo.png">
+    <script src="midproj.js"></script>
+</head>
+<body>
+<nav id="header" class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+
+<!-- Brand -->
+<a class="navbar-brand" href="#"><img src="UCU_logo.png" ></a><p id="ucuheader">URDANETA CITY UNIVERSITY</p>
+</nav>
+
+<div id="banner">
+	<div class="row">
+		<div class="col-md-12">
+			<h2>PERSONAL DATA SHEET<br>INDIVIDUAL INVENTORY SERVICE</h2>
+		</div>
+	</div>
+</div>
+
+<div id="content"">
+	
+<div class="container">
+
+	
+	<br>
+<form name="ucuForm">
+<div class="row form-group">
+			<div class="col-md-1"></div>
+			<div class="col-md-7"><h4>Submit Documents:</h4>
+				<ol>
+					
+					<ul style="list-style-type:none;">
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="pic">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">1 piece of 2x2 picture</span>
+							</label>
+
+
+						
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="f138">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">High School Card/F138</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="tc">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Transfer Credentials (for transferees)</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="gmc">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Certificate of Good Moral Character</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="nso" >
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Birth Certificate issued by NSO</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="bc">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Barangay Clearance</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="form137">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">Form-137</span>
+							</label></li>
+						<li><label class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" name="otr">
+							<span class="custom-control-indicator"></span>
+							<span class="custom-control-description">OTR/Copy of Grades</span>
+							</label><br>
+							<span id="errorRequirements"></span></li>
+					</ul>
+				</ol></div>
+				<div class="col-md-3">
+					<input type="file" id="hideinput">
+					<input type="button" value="2x2 Pic" id="uploadpic" onclick="document.getElementById('hideinput').click()">
+				</div>
+			</div>
+			
+<div class="container">
+<br><br>
+ 		<div class="row">
+				
+				<div class="col-md-12"><p class="h5">Application for University Admission Please Check</p></div>
+
+				
+				
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-2">
+					<select name="admission">
+					<option >Select</option>
+					<option >Freshman</option>
+					<option >Transferee</option>
+					<option >Second Degree</option>
+				</select>
+				<span id="eadmission"></span>
+				
+				
+				</div>
+				
+			</div>
+
+			
+			
+		
+
+
+
+<hr id="thick">		
+		<div class="row form-group">
+			<div class="col-md-4">Are you a member of any indigenous group?</div>
+			<div class="col-md-2"><label class="custom-control 	         	custom-radio">
+				<input id="yes" name="choice" type="radio" class="custom-control-input"  value="Yes"  onclick="hide(this)">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">YES</span>
+				</label>
+				<label class="custom-control custom-radio">
+				<input id="no" name="choice" type="radio" class="custom-control-input"  value="No"  onclick="hide(this)">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">NO</span>
+				</label>
+				<br><span id="errorChoice"></span>
+				</div>
+			
+			<div class="col-md-3" style="display: none" id="dvspecify">
+				<input type="text" name="specify" class="form-control" placeholder="If YES, please specify">
+				
+			</div>
+			
+		</div>
+		<div class="row form-group">
+			<div class="col-md-4">Are you a person with disability?</div>
+			<div class="col-md-2"><label class="custom-control 	         	custom-radio">
+				<input id="yes2" name="choice2" type="radio" class="custom-control-input" onclick="hide(this)">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">YES</span>
+				</label>
+				<label class="custom-control custom-radio">
+				<input id="no2" name="choice2" type="radio" class="custom-control-input" onclick="hide(this)">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">NO</span>
+				</label>
+				<br><span id="errorChoice2"></span>
+			</div>
+			
+			<div class="col-md-3" style="display: none" id="dv2specify">
+				<input type="text" name="ifyes2" class="form-control" placeholder="If YES, please specify">
+				
+			</div>
+			<div class="col-md-2" style="display: none" id="dv2specify">
+					<input type="text" class="form-control" name="idno" placeholder="ID Number">
+					
+			</div>
+
+			
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4">Are you a solo parent?</div>
+			<div class="col-md-2"><label class="custom-control 	         	custom-radio">
+				<input id="yes3" name="choice3" type="radio" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">YES</span>
+				</label>
+				<label class="custom-control custom-radio">
+				<input id="no3" name="choice3" type="radio" class="custom-control-input">
+				<span class="custom-control-indicator"></span>
+				<span class="custom-control-description">NO</span>
+				</label>
+				<br><span id="errorChoice3"></span></div>
+			<div class="col-md-4"></div>
+			
+		</div>
+<hr id="thick">
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-2"><B>I. PERSONAL DATA</B></div>
+			<div class="col-md-10"></div>
+			
+		</div>
+
+		<!--Application for-->
+		<div class="row form-group">
+			<div class="col-md-2"><label for="Application" class="col-form-label">Application for</label></div>
+			<div class="col-md-10"><label class="custom-control custom-radio">
+			<input id="radio1" name="sem" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">First Semester</span>
+			</label>
+			<label class="custom-control custom-radio">
+			<input id="radio2" name="sem" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Second Semester</span>
+			</label>
+			<br><span id="errorSem"></span></div>
+			
+		</div>
+
+		<!--School year-->
+		<div class="row form-group">
+			<div class="col-md-2"><label class="col-form-label">School Year</label></div>
+			<div class="col-md-3"><input type="text" class="form-control" id="sy" placeholder="School Year" onchange="changeColor(this)" onclick="changeColorClick()">
+			<span id="errorSy"></span></div>
+		</div>
+
+		<!--Name-->
+		<div class="row form-group">
+			<div class="col-md-2"><label for="name" class="col-form-label">Name</label></div>
+			<div class="col-md-3"><input type="text" class="form-control" id="Lastname" placeholder="Last Name" onchange="changeColor(this)" onclick="changeColorClick1()">
+			<span id="errorLastname"></span></div>
+			<div class="col-md-3"><input type="text" class="form-control" id="fname" placeholder="First Name" onchange="changeColor(this)" onclick="changeColorClick2()">
+			<span id="errorfname"></span></div>
+			<div class="col-md-3"><input type="text" class="form-control" id="mname" placeholder="Middle Name" onchange="changeColor(this)" onclick="changeColorClick3()">
+			<span id="errormname"></span></div>
+		</div>
+
+	<!--Date of Birth-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="db" class="col-form-label">Date of Birth</label></div>
+		<div class="col-md-10">
+				<select name="selectmonth">
+					<option value="month1"> Month</option>
+					<option value="january"> January</option>
+					<option value="february"> February</option>
+					<option value="march"> March</option>
+					<option value="april"> April</option>
+					<option value="may"> May</option>
+					<option value="june"> June</option>
+					<option value="july"> July</option>
+					<option value="august"> August</option>
+					<option value="september"> September</option>
+					<option value="october"> October</option>
+					<option value="november"> November</option>
+					<option value="december"> December</option>
+				</select>
+				<span id="errormonth"></span>
+				
+
+				<select name="selectdays">
+					<option value="days1"> Days</option>
+					<option value="1"> 1</option>
+					<option value="2"> 2</option>
+					<option value="3"> 3</option>
+					<option value="4"> 4</option>
+					<option value="5"> 5</option>
+					<option value="6"> 6</option>
+					<option value="7"> 7</option>
+					<option value="8"> 8</option>
+					<option value="9"> 9</option>
+					<option value="10"> 10</option>
+					<option value="11"> 11</option>
+					<option value="12"> 12</option>
+					<option value="13"> 13</option>
+					<option value="14"> 14</option>
+					<option value="15"> 15</option>
+					<option value="16"> 16</option>
+					<option value="17"> 17</option>
+					<option value="18"> 18</option>
+					<option value="19"> 19</option>
+					<option value="20"> 20</option>
+					<option value="21"> 21</option>
+					<option value="22"> 22</option>
+					<option value="23"> 23</option>
+					<option value="24"> 24</option>
+					<option value="25"> 25</option>
+					<option value="26"> 26</option>
+					<option value="27"> 27</option>
+					<option value="28"> 28</option>
+					<option value="29"> 29</option>
+					<option value="30"> 30</option>
+					<option value="31"> 31</option>
+				</select>
+				<span id="errordays"></span>
+
+				<select name="years1">
+					<option value="years1"> Years</option>
+					<option value="2017"> 2017</option>
+					<option value="2016"> 2016</option>
+					<option value="2015"> 2015</option>
+					<option value="2014"> 2014</option>
+					<option value="2013"> 2013</option>
+					<option value="2012"> 2012</option>
+					<option value="2011"> 2011</option>
+					<option value="2010"> 2010</option>
+					<option value="2009"> 2009</option>
+					<option value="2008"> 2008</option>
+					<option value="2007"> 2007</option>
+					<option value="2006"> 2006</option>
+					<option value="2005"> 2005</option>
+					<option value="2004"> 2004</option>
+					<option value="2003"> 2003</option>
+					<option value="2002"> 2002</option>
+					<option value="2001"> 2001</option>
+					<option value="2000"> 2000</option>
+					<option value="1999"> 1999</option>
+					<option value="1998"> 1998</option>
+					<option value="1997"> 1997</option>
+					<option value="1996"> 1996</option>
+					<option value="1995"> 1995</option>
+					<option value="1994"> 1994</option>
+					<option value="1993"> 1993</option>
+					<option value="1992"> 1992</option>
+					<option value="1991"> 1991</option>
+					<option value="1990"> 1990</option>
+					<option value="1989"> 1989</option>
+					<option value="1988"> 1988</option>
+					<option value="1987"> 1987</option>
+					<option value="1986"> 1986</option>
+					<option value="1985"> 1985</option>
+					<option value="1984"> 1984</option>
+					<option value="1983"> 1983</option>
+					<option value="1982"> 1982</option>
+					<option value="1981"> 1981</option>
+					<option value="1980"> 1980</option>
+					<option value="1979"> 1979</option>
+					<option value="1978"> 1978</option>
+					<option value="1977"> 1977</option>
+					<option value="1976"> 1976</option>
+					<option value="1975"> 1975</option>
+					<option value="1974"> 1974</option>
+					<option value="1973"> 1973</option>
+					<option value="1972"> 1972</option>
+					<option value="1971"> 1971</option>
+					<option value="1970"> 1970</option>
+					<option value="1969"> 1969</option>
+					<option value="1968"> 1968</option>
+					<option value="1967"> 1967</option>
+					<option value="1966"> 1966</option>
+					<option value="1965"> 1965</option>
+					<option value="1964"> 1964</option>
+					<option value="1963"> 1963</option>
+					<option value="1962"> 1962</option>
+					<option value="1961"> 1961</option>
+					<option value="1960"> 1960</option>
+				</select>
+				<span id="erroryears"></span>
+				
+				
+			</div>
+
+		
+	</div>
+
+	<!--Place of Birth-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="pb" class="col-form-label">Place of Birth</label></div>
+		<div class="col-md-6"><input type="text" class="form-control" id="pb" placeholder="Place of Birth" onchange="changeColor(this)" onclick="changeColorClick4()">
+		<span id="errorpb"></span></div>
+	</div>
+
+	<!--Gender-->
+	<div class="row form-group">
+			<div class="col-md-2"><label for="Application" class="col-form-label">Gender</label></div>
+			<div class="col-md-10"><label class="custom-control custom-radio">
+			<input id="radio1" name="gender" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Male</span>
+			</label>
+			<label class="custom-control custom-radio">
+			<input id="radio2" name="gender" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Female</span>
+			</label>
+			<br><span id="errorgender"></span>
+			</div>
+	</div>
+
+	<!--Civil Status-->
+	<div class="row form-group">
+			<div class="col-md-2"><label for="Application" class="col-form-label">Civil Status</label></div>
+			<div class="col-md-10"><label class="custom-control custom-radio">
+			<input id="radio1" name="status" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Single</span>
+			</label>
+			<label class="custom-control custom-radio">
+			<input id="radio2" name="status" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Married</span>
+			</label>
+			<br><span id="errorstatus"></span>
+			</div>
+	</div>
+
+
+	<!--Address-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="address" class="col-form-label">Address</label></div>
+		<div class="col-md-3"><input type="text" class="form-control" placeholder="Appartment, Building, Unit, etc." id="addapart1" onchange="changeColor(this)" onclick="changeColorClick5()"><span id="erroraddapart1"></span></div>
+		<div class="col-md-3"><input type="text" id="addstreet1" class="form-control" placeholder="Street Address" onchange="changeColor(this)" onclick="changeColorClick6()"><span id="erroraddstreet1"></span></div>
+		<div class="col-md-3"><input type="text" class="form-control" id="addcity1" placeholder="City" onchange="changeColor(this)" onclick="changeColorClick7()"><span id="erroraddcity1"></span></div>
+	</div>
+	<div class="row form-group">
+		<div class="col-md-2"></div>
+		<div class="col-md-3"><input type="text" id="addprov1" class="form-control" placeholder="Province/Region" onchange="changeColor(this)" onclick="changeColorClick8()"><span id="erroraddprov1"></span></div>
+		<div class="col-md-3"><input type="text" id="zip1" class="form-control" placeholder="Zip Code" onchange="changeColor(this)" onclick="changeColorClick9()"><span id="errorzip1"></span></div>
+		
+	</div>
+
+	<!--Contact-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="contact" class="col-form-label">Contact Number</label></div>
+		<div class="col-md-3"><input type="text" id="contact" class="form-control" placeholder="Phone no./Tel no." onchange="changeColor(this)" onclick="changeColorClick10()"><span id="errorcontact"></span></div>
+	</div>
+
+	<!--Email add-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="email" class="col-form-label">Email Address</label></div>
+		<div class="col-md-3"><input type="email" id="email" class="form-control" placeholder="Email Address" onchange="changeColor(this)" onclick="changeColorClick11()"><span id="erroremail"></span></div>
+		
+	</div>
+
+	<!--Person to be contacted-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="contact" class="col-form-label">Guardian</label></div>
+		<div class="col-md-3"><input type="text" id="guardian" class="form-control" placeholder="Name of your Guardian" onchange="changeColor(this)" onclick="changeColorClick12()"><span id="errorguardian"></span></div>
+		<div class="col-md-3"><input type="text" id="guardiancontact" class="form-control" placeholder="Contact no." onchange="changeColor(this)" onclick="changeColorClick13()"><span id="errorguardiancontact"></span></div>
+	</div>
+
+	<!--Last School-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="email" class="col-form-label">School Last Attented</label></div>
+		<div class="col-md-3"><input type="text" id="nameofsch" class="form-control" placeholder="Name of School" onchange="changeColor(this)" onclick="changeColorClick14()"><span id="errornameofsch"></span></div>
+		<div class="col-md-6"><input type="text" id="schadd" class="form-control" placeholder="School Address" onchange="changeColor(this)" onclick="changeColorClick15()"><span id="errorschadd"></span></div>
+	</div>
+
+	<!--Degree Program-->
+	<div class="row form-group">
+		<div class="col-md-2"><label for="deg" class="col-form-label">Select Degree Program/s</label></div>
+		<div class="col-md-3"><input type="text" id="fchoice" class="form-control" placeholder="First Choice" onchange="changeColor(this)" onclick="changeColorClick16()"><span id="errorfchoice"></span></div>
+		<div class="col-md-3"><input type="text" id="fmajor" class="form-control" name="db" placeholder="Major" onchange="changeColor(this)" onclick="changeColorClick17()"><span id="errorfmajor"></span></div>
+	</div>
+	<div class="row form-group">
+		<div class="col-md-2"></div>
+		<div class="col-md-3"><input type="text" id="schoice" class="form-control" placeholder="Second Choice" onchange="changeColor(this)" onclick="changeColorClick18()"><span id="errorschoice"></span></div>
+		<div class="col-md-3"><input type="text" class="form-control" id="smajor" placeholder="Major" onchange="changeColor(this)" onclick="changeColorClick21()"><span id="errorsmajor"></span></div>
+	</div>
+	<div class="row form-group">
+		<div class="col-md-2"></div>
+		<div class="col-md-3"><input type="text" id="cchoice" class="form-control" placeholder="Current Choice" onchange="changeColor(this)" onclick="changeColorClick19()"><span id="errorcchoice"></span></div>
+		<div class="col-md-3"><input type="text" id="cmajor" class="form-control" placeholder="Major" onchange="changeColor(this)" onclick="changeColorClick20()"><span id="errorcmajor"></span></div>
+	</div>
+
+    <!--Reasons-->
+	<div class="row form-group">
+		<div class="col-md-2"><label  class="col-form-label">Reasons for taking up your current choice:</label></div>
+		<div class="col-md-9"><input type="text" id="reason" class="form-control" onchange="changeColor(this)" onclick="changeColorClick22()"><span id="errorreason"></span></div>
+	</div>
+
+	<!--Bro/Sis studying here-->
+	<div class="row form-group">
+		<div class="col-md-2"><label class="col-form-label">
+		Do you have a brother/sister/relative studying here?</label></div>
+		<div class="col-md-5"><label class="custom-control custom-radio">
+			<input id="radio1" name="relative" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">YES</span>
+			</label>
+			<label class="custom-control custom-radio">
+			<input id="radio2" name="relative" type="radio" class="custom-control-input">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">NO</span>
+			</label><br>
+			<span id="errorrelative"></span></div>
+	</div>
+
+	<div class="row form-group">
+		<div class="col-md-2"><label class="col-form-label">If yes, what is his/her course?</label></div>
+		<div class="col-md-6"><input type="text" id="hc1" class="form-control" onchange="changeColor(this)" onclick="changeColorClick23()">
+		<span id="errorhc1"></span></div>
+	</div>
+
+	<div class="row form-group">
+		<div class="col-md-2"><label class="col-form-label">Your reason/s for enrolling at UCU</label></div>
+		<div class="col-md-6"><input type="text" class="form-control" id="rucu" onchange="changeColor(this)" onclick="changeColorClick24()"><span id="erucu"></span></div>
+	</div>
+
+	<div class="row form-group">
+		<div class="col-md-2"><label></label></div>
+		<div class="col-md-2"></div>
+	</div>
+
+	<div class="row form-group">
+		<div class="col-md-2"><label><b>Source of Financial Support in College</b></label></div>
+		<div class="col-md-2"><label class="custom-control custom-radio">
+			<input  name="source" type="radio" id="sourcesch" class="custom-control-input" onclick="hide(this)">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Scholarship</span>
+			</label></div>
+		<div class="col-md-2"><label class="custom-control custom-radio">
+			<input id="sourcep" name="source" type="radio" class="custom-control-input" onclick="hide(this)">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Parents</span>
+			</label></div>
+		<div class="col-md-5"><label class="custom-control custom-radio">
+			<input id="sourceothers" name="source" type="radio" class="custom-control-input" onclick="hide(this)">
+			<span class="custom-control-indicator"></span>
+			<span class="custom-control-description">Other sponsors please specify:</span>
+			</label>
+			<input type="text"  style="display: none" class="form-control" name="othersponson" id="otherspo" placeholder="Other Sponsors">
+			<span id="errorsource"></span>
+			</div>
+			
+	</div>
+<hr id="thick">
+<br><br><br>
+	
+	<div class="row form-group">
+		<div class="col-md-2"><b>II. FAMILY BACKGROUND</b></div>
+	</div>
+
+
+	<!--Fathers Background-->
+	<div class="row form-group">
+		 <div class="col-md-2"><label  class="col-form-label">Father's Background</label></div>
+		 <div class="col-md-3"><input type="text" id="flname" class="form-control" placeholder="Last Name" onchange="changeColor(this)" onclick="changeColorClick25()"><span id="eflname"></span></div>
+		 <div class="col-md-3"><input type="text" id="ffname" class="form-control" placeholder="First Name" onchange="changeColor(this)" onclick="changeColorClick26()"><span id="effname"></span></div>
+		 <div class="col-md-3"><input type="text" id="fmname" class="form-control" placeholder="Middle Name" onchange="changeColor(this)" onclick="changeColorClick27()"><span id="efmname"></span></div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2"></div>
+		 <div class="col-md-3"><input type="text" id="fcontact" class="form-control" placeholder="Contact Number" onchange="changeColor(this)" onclick="changeColorClick28()"><span id="efcontact"></span></div>
+	
+	
+
+		 <div class="col-md-3"><input type="text" id="foccupation" class="form-control" placeholder="Occupation" onchange="changeColor(this)" onclick="changeColorClick29()"><span id="efoccupation"></span></div>
+		 <div class="col-md-3"><input type="text" id="fea" class="form-control" placeholder="Educational Attainment" onchange="changeColor(this)" onclick="changeColorClick30()"><span id="efea"></span></div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2">Date of Birth</div>
+		 <div class="col-md-2">
+				<select name="month2" class="form-control">
+					<option value="month"> Month</option>
+					<option value="january"> January</option>
+					<option value="february"> February</option>
+					<option value="march"> March</option>
+					<option value="april"> April</option>
+					<option value="may"> May</option>
+					<option value="june"> June</option>
+					<option value="july"> July</option>
+					<option value="august"> August</option>
+					<option value="september"> September</option>
+					<option value="october"> October</option>
+					<option value="november"> November</option>
+					<option value="december"> December</option>
+					
+				</select>
+				<span id="emonth"></span>
+				</div>
+
+
+				<div class="col-md-2">
+
+				<select name="days2" class="form-control">
+					<option value="days"> Days</option>
+					<option value="1"> 1</option>
+					<option value="2"> 2</option>
+					<option value="3"> 3</option>
+					<option value="4"> 4</option>
+					<option value="5"> 5</option>
+					<option value="6"> 6</option>
+					<option value="7"> 7</option>
+					<option value="8"> 8</option>
+					<option value="9"> 9</option>
+					<option value="10"> 10</option>
+					<option value="11"> 11</option>
+					<option value="12"> 12</option>
+					<option value="13"> 13</option>
+					<option value="14"> 14</option>
+					<option value="15"> 15</option>
+					<option value="16"> 16</option>
+					<option value="17"> 17</option>
+					<option value="18"> 18</option>
+					<option value="19"> 19</option>
+					<option value="20"> 20</option>
+					<option value="21"> 21</option>
+					<option value="22"> 22</option>
+					<option value="23"> 23</option>
+					<option value="24"> 24</option>
+					<option value="25"> 25</option>
+					<option value="26"> 26</option>
+					<option value="27"> 27</option>
+					<option value="28"> 28</option>
+					<option value="29"> 29</option>
+					<option value="30"> 30</option>
+					<option value="31"> 31</option>
+					
+				</select>
+				<span id="edays"></span>
+				</div>
+				<div class="col-md-2">
+
+				<select name="years2" class="form-control">
+					<option value="years"> Years</option>
+					<option value="2017"> 2017</option>
+					<option value="2016"> 2016</option>
+					<option value="2015"> 2015</option>
+					<option value="2014"> 2014</option>
+					<option value="2013"> 2013</option>
+					<option value="2012"> 2012</option>
+					<option value="2011"> 2011</option>
+					<option value="2010"> 2010</option>
+					<option value="2009"> 2009</option>
+					<option value="2008"> 2008</option>
+					<option value="2007"> 2007</option>
+					<option value="2006"> 2006</option>
+					<option value="2005"> 2005</option>
+					<option value="2004"> 2004</option>
+					<option value="2003"> 2003</option>
+					<option value="2002"> 2002</option>
+					<option value="2001"> 2001</option>
+					<option value="2000"> 2000</option>
+					<option value="1999"> 1999</option>
+					<option value="1998"> 1998</option>
+					<option value="1997"> 1997</option>
+					<option value="1996"> 1996</option>
+					<option value="1995"> 1995</option>
+					<option value="1994"> 1994</option>
+					<option value="1993"> 1993</option>
+					<option value="1992"> 1992</option>
+					<option value="1991"> 1991</option>
+					<option value="1990"> 1990</option>
+					<option value="1989"> 1989</option>
+					<option value="1988"> 1988</option>
+					<option value="1987"> 1987</option>
+					<option value="1986"> 1986</option>
+					<option value="1985"> 1985</option>
+					<option value="1984"> 1984</option>
+					<option value="1983"> 1983</option>
+					<option value="1982"> 1982</option>
+					<option value="1981"> 1981</option>
+					<option value="1980"> 1980</option>
+					<option value="1979"> 1979</option>
+					<option value="1978"> 1978</option>
+					<option value="1977"> 1977</option>
+					<option value="1976"> 1976</option>
+					<option value="1975"> 1975</option>
+					<option value="1974"> 1974</option>
+					<option value="1973"> 1973</option>
+					<option value="1972"> 1972</option>
+					<option value="1971"> 1971</option>
+					<option value="1970"> 1970</option>
+					<option value="1969"> 1969</option>
+					<option value="1968"> 1968</option>
+					<option value="1967"> 1967</option>
+					<option value="1966"> 1966</option>
+					<option value="1965"> 1965</option>
+					<option value="1964"> 1964</option>
+					<option value="1963"> 1963</option>
+					<option value="1962"> 1962</option>
+					<option value="1961"> 1961</option>
+					<option value="1960"> 1960</option>
+					
+				</select>
+				<span id="eyears"></span>
+			</div>
+			</div>
+	<!--mother's backgroun-->
+	<div class="row form-group">
+		 <div class="col-md-2"><label  class="col-form-label">Mother's Background</label></div>
+		 <div class="col-md-3"><input type="text" id="mlname" class="form-control" placeholder="Last Name" onchange="changeColor(this)" onclick="changeColorClick31()"><span id="emlname"></span></div>
+		 <div class="col-md-3"><input type="text" id="mfname" class="form-control" placeholder="First Name" onchange="changeColor(this)" onclick="changeColorClick32()"><span id="emfname"></span></div>
+		 <div class="col-md-3"><input type="text" id="mmname" class="form-control" placeholder="Middle Name" onchange="changeColor(this)" onclick="changeColorClick33()"><span id="emmname"></span></div>
+	</div>
+	<div class="row form-group">
+		 <div class="col-md-2"></div>
+		 <div class="col-md-3"><input type="text" id="mcontact" class="form-control" placeholder="Contact Number" onchange="changeColor(this)" onclick="changeColorClick34()"><span id="emcontact"></span></span></div>
+		 <div class="col-md-3"><input type="text" id="moccupation" class="form-control" placeholder="Occupation" onchange="changeColor(this)" onclick="changeColorClick35()"><span id="emoccupation"></span></div>
+		 <div class="col-md-3"><input type="text" id="mea" class="form-control" placeholder="Educational Attainment" onchange="changeColor(this)" onclick="changeColorClick36()"><span id="emea"></span></div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2">Date of Birth</div>
+		  <div class="col-md-2">
+				<select name="month4" class="form-control">
+					<option value="month"> Month</option>
+					<option value="january"> January</option>
+					<option value="february"> February</option>
+					<option value="march"> March</option>
+					<option value="april"> April</option>
+					<option value="may"> May</option>
+					<option value="june"> June</option>
+					<option value="july"> July</option>
+					<option value="august"> August</option>
+					<option value="september"> September</option>
+					<option value="october"> October</option>
+					<option value="november"> November</option>
+					<option value="december"> December</option>
+				</select>
+				<span id="emonth4"></span>
+				
+				</div>
+				<div class="col-md-2" >
+				<select name="days4" class="form-control">
+					<option value="days"> Days</option>
+					<option value="1"> 1</option>
+					<option value="2"> 2</option>
+					<option value="3"> 3</option>
+					<option value="4"> 4</option>
+					<option value="5"> 5</option>
+					<option value="6"> 6</option>
+					<option value="7"> 7</option>
+					<option value="8"> 8</option>
+					<option value="9"> 9</option>
+					<option value="10"> 10</option>
+					<option value="11"> 11</option>
+					<option value="12"> 12</option>
+					<option value="13"> 13</option>
+					<option value="14"> 14</option>
+					<option value="15"> 15</option>
+					<option value="16"> 16</option>
+					<option value="17"> 17</option>
+					<option value="18"> 18</option>
+					<option value="19"> 19</option>
+					<option value="20"> 20</option>
+					<option value="21"> 21</option>
+					<option value="22"> 22</option>
+					<option value="23"> 23</option>
+					<option value="24"> 24</option>
+					<option value="25"> 25</option>
+					<option value="26"> 26</option>
+					<option value="27"> 27</option>
+					<option value="28"> 28</option>
+					<option value="29"> 29</option>
+					<option value="30"> 30</option>
+					<option value="31"> 31</option>
+				</select>
+				<span id="edays4"></span>
+				</div>
+				<div class="col-md-2">
+				<select name="years4" class="form-control">
+					<option value="years"> Years</option>
+					<option value="2017"> 2017</option>
+					<option value="2016"> 2016</option>
+					<option value="2015"> 2015</option>
+					<option value="2014"> 2014</option>
+					<option value="2013"> 2013</option>
+					<option value="2012"> 2012</option>
+					<option value="2011"> 2011</option>
+					<option value="2010"> 2010</option>
+					<option value="2009"> 2009</option>
+					<option value="2008"> 2008</option>
+					<option value="2007"> 2007</option>
+					<option value="2006"> 2006</option>
+					<option value="2005"> 2005</option>
+					<option value="2004"> 2004</option>
+					<option value="2003"> 2003</option>
+					<option value="2002"> 2002</option>
+					<option value="2001"> 2001</option>
+					<option value="2000"> 2000</option>
+					<option value="1999"> 1999</option>
+					<option value="1998"> 1998</option>
+					<option value="1997"> 1997</option>
+					<option value="1996"> 1996</option>
+					<option value="1995"> 1995</option>
+					<option value="1994"> 1994</option>
+					<option value="1993"> 1993</option>
+					<option value="1992"> 1992</option>
+					<option value="1991"> 1991</option>
+					<option value="1990"> 1990</option>
+					<option value="1989"> 1989</option>
+					<option value="1988"> 1988</option>
+					<option value="1987"> 1987</option>
+					<option value="1986"> 1986</option>
+					<option value="1985"> 1985</option>
+					<option value="1984"> 1984</option>
+					<option value="1983"> 1983</option>
+					<option value="1982"> 1982</option>
+					<option value="1981"> 1981</option>
+					<option value="1980"> 1980</option>
+					<option value="1979"> 1979</option>
+					<option value="1978"> 1978</option>
+					<option value="1977"> 1977</option>
+					<option value="1976"> 1976</option>
+					<option value="1975"> 1975</option>
+					<option value="1974"> 1974</option>
+					<option value="1973"> 1973</option>
+					<option value="1972"> 1972</option>
+					<option value="1971"> 1971</option>
+					<option value="1970"> 1970</option>
+					<option value="1969"> 1969</option>
+					<option value="1968"> 1968</option>
+					<option value="1967"> 1967</option>
+					<option value="1966"> 1966</option>
+					<option value="1965"> 1965</option>
+					<option value="1964"> 1964</option>
+					<option value="1963"> 1963</option>
+					<option value="1962"> 1962</option>
+					<option value="1961"> 1961</option>
+					<option value="1960"> 1960</option>
+				</select>
+				<span id="eyears4"></span>
+			</div>
+	</div>
+
+	<div class="row form-group">
+		<div class="col-md-2"><label for="address" class="col-form-label">Their Address</label></div>
+		<div class="col-md-3"><input type="text" id="apart2" class="form-control" placeholder="Appartment, Building, Unit, etc." onchange="changeColor(this)" onclick="changeColorClick37()"><span id="eapart2"></span></div>
+		<div class="col-md-3"><input type="text" id="street2" class="form-control" placeholder="Street Address" onchange="changeColor(this)" onclick="changeColorClick38()"><span id="estreet2"></span></div>
+		<div class="col-md-3"><input type="text" id="city2" class="form-control" placeholder="City" onchange="changeColor(this)" onclick="changeColorClick39()"><span id="ecity2"></span></div>
+	</div>
+
+
+	<div class="row form-group">
+		 <div class="col-md-2"><label  class="col-form-label"></label>Siblings</div>
+		 <div class="col-md-3"><input type="text" id="nobro" class="form-control" placeholder="No. of Brothers" onchange="changeColor(this)" onclick="changeColorClick40()"><span id="enobro"></span></div>
+	
+		<div class="col-md-3"><input type="text" id="nosis" class="form-control" placeholder="No. of Sisters" onchange="changeColor(this)" onclick="changeColorClick41()"><span id="enosis"></span></div>
+		
+	</div>
+
+<hr>
+	<br><br><br>
+
+	
+
+	<div class="row form-group">
+		 <div class="col-md-2"><label  class="col-form-label"><b>If married, please answer</b></label></div>
+		 <div class="col-md-3"><input type="text" id="nos" class="form-control" placeholder="Name of spouse" onchange="changeColor(this)" onclick="changeColorClick42()"><span id="enos"></span></div>
+		  <div class="col-md-7">
+				<select name="month3">
+					<option value="month"> Month</option>
+					<option value="january"> January</option>
+					<option value="february"> February</option>
+					<option value="march"> March</option>
+					<option value="april"> April</option>
+					<option value="may"> May</option>
+					<option value="june"> June</option>
+					<option value="july"> July</option>
+					<option value="august"> August</option>
+					<option value="september"> September</option>
+					<option value="october"> October</option>
+					<option value="november"> November</option>
+					<option value="december"> December</option>
+				</select>
+				<span id="emonth1"></span>
+
+				<select name="days3">
+					<option value="days"> Days</option>
+					<option value="1"> 1</option>
+					<option value="2"> 2</option>
+					<option value="3"> 3</option>
+					<option value="4"> 4</option>
+					<option value="5"> 5</option>
+					<option value="6"> 6</option>
+					<option value="7"> 7</option>
+					<option value="8"> 8</option>
+					<option value="9"> 9</option>
+					<option value="10"> 10</option>
+					<option value="11"> 11</option>
+					<option value="12"> 12</option>
+					<option value="13"> 13</option>
+					<option value="14"> 14</option>
+					<option value="15"> 15</option>
+					<option value="16"> 16</option>
+					<option value="17"> 17</option>
+					<option value="18"> 18</option>
+					<option value="19"> 19</option>
+					<option value="20"> 20</option>
+					<option value="21"> 21</option>
+					<option value="22"> 22</option>
+					<option value="23"> 23</option>
+					<option value="24"> 24</option>
+					<option value="25"> 25</option>
+					<option value="26"> 26</option>
+					<option value="27"> 27</option>
+					<option value="28"> 28</option>
+					<option value="29"> 29</option>
+					<option value="30"> 30</option>
+					<option value="31"> 31</option>
+				</select>
+				<span id="edays1"></span>
+
+				<select name="years3">
+					<option value="years"> Years</option>
+					<option value="2017"> 2017</option>
+					<option value="2016"> 2016</option>
+					<option value="2015"> 2015</option>
+					<option value="2014"> 2014</option>
+					<option value="2013"> 2013</option>
+					<option value="2012"> 2012</option>
+					<option value="2011"> 2011</option>
+					<option value="2010"> 2010</option>
+					<option value="2009"> 2009</option>
+					<option value="2008"> 2008</option>
+					<option value="2007"> 2007</option>
+					<option value="2006"> 2006</option>
+					<option value="2005"> 2005</option>
+					<option value="2004"> 2004</option>
+					<option value="2003"> 2003</option>
+					<option value="2002"> 2002</option>
+					<option value="2001"> 2001</option>
+					<option value="2000"> 2000</option>
+					<option value="1999"> 1999</option>
+					<option value="1998"> 1998</option>
+					<option value="1997"> 1997</option>
+					<option value="1996"> 1996</option>
+					<option value="1995"> 1995</option>
+					<option value="1994"> 1994</option>
+					<option value="1993"> 1993</option>
+					<option value="1992"> 1992</option>
+					<option value="1991"> 1991</option>
+					<option value="1990"> 1990</option>
+					<option value="1989"> 1989</option>
+					<option value="1988"> 1988</option>
+					<option value="1987"> 1987</option>
+					<option value="1986"> 1986</option>
+					<option value="1985"> 1985</option>
+					<option value="1984"> 1984</option>
+					<option value="1983"> 1983</option>
+					<option value="1982"> 1982</option>
+					<option value="1981"> 1981</option>
+					<option value="1980"> 1980</option>
+					<option value="1979"> 1979</option>
+					<option value="1978"> 1978</option>
+					<option value="1977"> 1977</option>
+					<option value="1976"> 1976</option>
+					<option value="1975"> 1975</option>
+					<option value="1974"> 1974</option>
+					<option value="1973"> 1973</option>
+					<option value="1972"> 1972</option>
+					<option value="1971"> 1971</option>
+					<option value="1970"> 1970</option>
+					<option value="1969"> 1969</option>
+					<option value="1968"> 1968</option>
+					<option value="1967"> 1967</option>
+					<option value="1966"> 1966</option>
+					<option value="1965"> 1965</option>
+					<option value="1964"> 1964</option>
+					<option value="1963"> 1963</option>
+					<option value="1962"> 1962</option>
+					<option value="1961"> 1961</option>
+					<option value="1960"> 1960</option>
+				</select>
+				<span id="eyears1"></span>
+			</div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2"></div>
+		 <div class="col-md-3"><input type="text" id="nationality" class="form-control" placeholder="Nationality" onchange="changeColor(this)" onclick="changeColorClick43()"><span id="enationality"></span></div>
+		 <div class="col-md-3"><input type="text" id="religion" class="form-control" placeholder="Religion" onchange="changeColor(this)" onclick="changeColorClick44()"><span id="ereligion"></span></div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2"></div>
+		 <div class="col-md-3"><input type="text" id="ea" class="form-control" placeholder="Educational Attainment" onchange="changeColor(this)" onclick="changeColorClick45()"><span id="eea"></span></div>
+		 <div class="col-md-3"><input type="text" id="occu3" class="form-control" placeholder="Occupation" onchange="changeColor(this)" onclick="changeColorClick46()"><span id="eoccu3"></span></div>
+	</div>
+
+	<div class="row form-group">
+		 <div class="col-md-2"></div>
+		 <div class="col-md-3"><input type="text" id="nosofc" class="form-control" placeholder="No. of Children" onchange="changeColor(this)" onclick="changeColorClick47()"><span id="enosofc"></div>
+		 <div class="col-md-2"><input type="text" id="nosboys" class="form-control" placeholder="Boys" onchange="changeColor(this)" onclick="changeColorClick48()"><span id="enosboys"></span></div>
+		 <div class="col-md-2"><input type="text" id="nosgirls" class="form-control" placeholder="Girls" onchange="changeColor(this)" onclick="changeColorClick49()"><span id="enosgirls"></span></div>
+	</div>
+
+
+
+<br><br><br><br><br><br>
+
+<div class="row form-group">							
+			<div class="col-md-1"><label for="button" class="col-form-label"></label></div>
+			<div class="col-md-10"><center><button type="button" class="btn btn-primary" onclick="formValidation(),num(),a()">Submit</button></center></div>	
+			<div class="col-md-1"></div>	
+		</div>
+		</form>
+
+
+
+
+	</div>	
+</div>
+
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
+

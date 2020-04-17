@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jhon - Portfolio</title>
+	<link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/fixed.css">
+	<link rel="shortcut icon" href="img/Logo2.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="parallax.js-1.5.0/parallax.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+<!--- Start of Home Section -->
+<div id="home">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<a class="navbar-brand" href="index.html"> <img src="img/logo1.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#home">Home</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#about">About</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#skills">Skills</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#projects">Projects</a>
+				</li>
+<!-- 				<li class="nav-item">
+					<a class="nav-link" href="#portfolio">Portfolio</a>
+				</li> -->
+				<li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+		
+	</nav>
+
+	<!-- Start of Image Slider -->
+<div id="carouselExampleIndicators1" class="carousel slide web">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators1" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExEampleIndicators1" data-slide-to="1"></li>
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		<!-- Slide 1 -->
+		<div  class="carousel-item active" style="background-image: url(img/masthead.jpg);">
+			<div id="carousel1" class="carousel-caption text-left">
+				<h6> <b class="textblue">HELLO!</b> </h6>
+				<h1>I'm <strong class="textblue"><span class="text-focus-in">Jhon<br> Cesar Pablo</span> </strong></h1>
+				<h3 class="text-flicker-in-glow">A Web Designer</h3>
+				<a id="scale-in-ver-bottom" class="btn btn-outline-light btn-lg" href="#about" > Get Started</a>
+			</div>
+		</div>
+		<!-- Slide 2 -->
+		<div class="carousel-item" style="background-image: url(img/gradbg6.jpg);">
+			<div id="carousel2" class="carousel-caption text-left">
+				<h6> <b class="textblue">HELLO!</b> </h6>
+				<h1>I graduated from <br><strong class="textblue">Urdaneta City University.</strong></h1>
+				<h3>Bachelor of Science in Information <br>Technology</h3>
+				<a class="btn btn-outline-light btn-lg" href="#about" > Get Started</a>
+			</div>
+		</div>
+
+	</div> <!-- End of Carouser Inner -->
+
+</div>	
+	<!-- End of Image Slider -->
+
+
+
+
+		<!-- Start of Image Slider -->
+<div id="carouselExampleIndicators" class="carousel slide  mobile" data-ride="carousel" data-interval="7000">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+	
+	</ol>
+	<div class="carousel-inner" role="listbox">
+			<!-- Slide 1 mobile-->
+			<div  class="carousel-item active" style="background-image: url(img/mobile-masthead-1.jpg);">
+				<div id="carousel1" class="carousel-caption text-left">
+					<h6> <b class="textblue">HELLO!</b> </h6>
+					<h1>I'm <strong class="textblue"><span class="text-focus-in">Jhon<br> Cesar Pablo</span> </strong></h1>
+					<h3 class="text-flicker-in-glow">A Web Designer</h3>
+					<a id="scale-in-ver-bottom" class="btn btn-outline-light btn-lg" href="#about" > Get Started</a>
+				</div>
+			</div>
+			<!-- Slide 2 mobile-->
+			<div class="carousel-item" style="background-image: url(img/mobile-masthead-2.jpg);">
+				<div id="carousel2" class="carousel-caption text-left">
+					<h6> <b class="textblue">HELLO!</b> </h6>
+					<h1>I graduated from <br><strong class="textblue">Urdaneta City University.</strong></h1>
+					<h3>Bachelor of Science in Information <br>Technology</h3>
+					<a class="btn btn-outline-light btn-lg" href="#about" > Get Started</a>
+				</div>
+			</div>
+
+	</div> <!-- End of Carouser Inner -->
+
+</div>	
+	<!-- End of Image Slider -->
+
+
+
+</div>
+<!--- End of Home Section -->
+
+<!--- Start about Section -->
+<div id="about" class="offset">
+	
+	<div class="row d-flex">
+    			<div class="col-md-6 col-lg-5 d-flex" data-aos="fade-right">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style=" background-repeat: no-repeat;">
+	    					<img id="aboutpic" src="img/mypic2.png">
+	    				</div>
+    				</div>
+    			</div>
+    			<div id="ab" class="col-md-6 col-lg-7 pl-lg-5 pb-5" style="background-image: url(img/about2.png);background-repeat: no-repeat; height: 700; overflow: hidden;">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+
+		          	<!-- <h1 class="big">About</h1> -->
+		            <h2 class="mb-4" data-aos="fade-up">About Me</h2>
+		            
+		            <ul class="about-info mt-4 px-md-0 px-2" data-aos="fade-left">
+		            	<li class="d-flex"><span class="cv">Name:</span> <span class="info" id="cvn">Jhon Cesar Pablo</span></li>
+		            	<li class="d-flex"><span class="cv">Date of birth:</span> <span class="info"id="cvd">January 28, 1997</span></li>
+		            	<li class="d-flex"><span class="cv">Address:</span> <span class="info"id="cva">Gate 3 Fort Bonifacio, Taguig City, Philippines</span></li>
+		            	<li class="d-flex"><span class="cv">Zip code:</span> <span class="info"id="cvz">1630</span></li>
+		            	<li class="d-flex"><span class="cv">Email:</span> <span class="info"id="cve">jhncsrpbl@gmail.com</span></li>
+		            	<li class="d-flex"><span class="cv">Phone: </span> <span class="info"id="cvc">+63-909-0225-288</span></li>
+		            </ul>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              
+                <p><a href="img/download/RESUME-Jhon.pdf" target="_blank" class="btn btn-outline-light btn-lg" download>Download CV</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+        <br><br>
+</div>
+<!--- End about Section -->
+
+
+<!--- Start of Parallax Window -->
+<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/apple-black.jpg">
+	<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2"><img class="imgparallax" src="img/Logo2.png"></div>	
+			<div class="col-md-5"></div>				
+	</div>
+		
+</div>
+<!--- End of Parallax Window -->
+
+
+
+
+<!--- Start of skills Section -->
+<div id="skills" class="offset">
+
+	<!-- <div class="row">
+    		<div class="col-md-6">
+    			<div class="progress" style="background-color: #c5c6c7;">
+					  <div class="progress-bar" role="progressbar" style="width: 80%;background-color: #66fcf1;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><span style="color: #0b0c10;">80%</span></div>
+				</div>
+				
+    		</div>
+    			<div class="col-md-6">
+    				<div class="progress">
+				  		<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: #66fcf1;">
+				  	
+				  		</div>
+					</div>
+	        	</div>
+     </div> -->
+     <div class="container" >
+				<div class="row justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	
+            <h2 class="mb-4">My Skills</h2>
+            
+          </div>
+        </div>
+				<div class="row">
+					<div class="col-md-6 animate-box" >
+						<div class="progress-wrap ftco-animate">
+							<h3>Photoshop</h3>
+							<div class="progress" style="">
+							 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:60%; background-color: #45a29e;" data-aos="fade-right">
+							    <span>60%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>PHP</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="85"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:70%; background-color: #45a29e;">
+							    <span>70%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>HTML5</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:90%;background-color: #45a29e;">
+							    <span>90%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>CSS</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="90"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:80%;background-color: #45a29e;">
+							    <span>80%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Bootstrap</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:85%;background-color: #45a29e;">
+							    <span>85%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="progress-wrap ftco-animate">
+							<h3>Javascript</h3>
+							<div class="progress">
+							 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="80"
+							  	aria-valuemin="0" aria-valuemax="100" style="width:65%;background-color: #45a29e;">
+							    <span>65%</span>
+							  	</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</div>
+<!--- End of skills Section -->
+
+
+
+
+
+
+
+<!--- Start of Parallax Window -->
+<div class="parallax-window" data-parallax="scroll" data-z-index="1" data-image-src="img/architec.jpg">
+		<div class="row">
+			<div class="col-md-5"></div>
+			<div class="col-md-2"><img class="imgparallax" src="img/Logo2.png"></div>	
+			<div class="col-md-5"></div>				
+	</div>		
+</div>
+<!--- End of Parallax Window -->
+
+
+
+
+
+
+
+<!--- Start of projects Section -->
+<div id="projects" class="offset">
+
+	<div class="work-area">
+		<div class="project-margin">
+			<h1>Projects</h1>
+
+<div class="row">
+		<div class="col-md-12 col-sm-12 text-center">
+			<h3>SCHOOL PROJECTS</h3>
+			<p>Client Side Coding and Project Study</p>
+		</div>		
+	</div>
+			
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+					<a href="csc-project/bootstrapcss-form/jhonpabzPROJECT.html" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/pds.png">
+							<div class="overlay-text">
+								<h3 class="title">Bootstrap + CSS</h3>
+								<span class="post">Client Side Coding Project Form</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<a href="csc-project/jsvalidation-form/midproj.html" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/jsvalidation.png">
+							<div class="overlay-text">
+								<h3 class="title">Javacript Validation</h3>
+								<span class="post">Client Side Coding Project Form</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6">
+
+					<a href="thesis.html">
+						<div class="single-works">
+							<img src="img/projects/ucc.png">
+							<div class="overlay-text">
+								<h3 class="title">PHP & MySQL</h3>
+								<span class="post">Project Study</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+<hr class="line">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 text-center">
+					<h3>OFFICE WORK</h3>
+					
+					<p>Sample projects that I have created on the platform we are using in DPC. I use HTML5, CSS3, and sometimes Javascript for customization of websites depending on the partner's needs.</p>
+				</div>		
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6">
+
+					<a href="https://tigerbilt.com.ph/" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/rold.JPG">
+							<div class="overlay-text">
+								<h3 class="title">CSS3 Animation and Effects</h3>
+								<span class="post">Multiple Page</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<a href="https://arkvisionph.com/" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/ark-vision.JPG">
+							<div class="overlay-text">
+								<h3 class="title">Customized Website</h3>
+								<span class="post">Multiple Page</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="col-md-4 col-sm-6">
+					<a href="https://lolys.powersites.ph/" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/lolys.JPG">
+							<div class="overlay-text">
+								<h3 class="title">Customized Website</h3>
+								<span class="post">Single Page</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="row">
+						
+		
+						<div class="col-md-4 col-sm-6">
+							<a href="https://fiver.powersites.ph/" target="_blank">
+								<div class="single-works">
+									<img src="img/projects/fiver.JPG">
+									<div class="overlay-text">
+										<h3 class="title">Mock-up Website</h3>
+										<span class="post">Single Page</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-6">
+		
+							<a href="https://handd.powersites.ph/" target="_blank">
+								<div class="single-works">
+									<img src="img/projects/handd.JPG">
+									<div class="overlay-text">
+										<h3 class="title">Mock-up Website</h3>
+										<span class="post">Single Page</span>
+									</div>
+								</div>
+							</a>
+						</div>
+						<div class="col-md-4 col-sm-6">
+							<a href="https://wjas.powersites.ph/" target="_blank">
+								<div class="single-works">
+									<img src="img/projects/wjas.JPG">
+									<div class="overlay-text">
+										<h3 class="title">Mock-up Website</h3>
+										<span class="post">Single Page</span>
+									</div>
+								</div>
+							</a>
+						</div>
+					</div>
+					</div>
+				<hr class="line">
+			<div class="row">
+				<div class="col-md-12  col-sm-12 text-center">
+					<h3>OTHER PROJECT</h3>
+				</div>		
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 col-sm-6"></div>
+				<div class="col-md-4 col-sm-6">
+					<a href="projects.html" target="_blank">
+						<div class="single-works">
+							<img src="img/projects/aviation.PNG">
+							<div class="overlay-text">
+								<h3 class="title">PSD to HTML</h3>
+								<span class="post">Web Design</span>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-4 col-sm-6"></div>
+			</div>
+		</div>
+	</div>
+
+
+	
+</div>
+<!--- End of projects Section -->
+
+
+<!--- Start of contact Section -->
+<div id="contact" class="offset">
+	
+	<footer>
+		<div class="row justify-content-center">
+			<div class="col-md-jhon1 text-center">
+				<img src="img/logo.png">
+				<p>Jhon Cesar Pablo Web Designer / Front End Developer w/ Degree of Bachelor of Science in Information Technology</p>
+				<strong>Contact Info</strong>
+				<p>+639090225288
+					<br>jhncsrpbl@gmail.com</p>
+
+				<a href="https://web.facebook.com/jhoncesarpablo" target="_blank"> <i class="fab fa-facebook-square"></i></a>
+			
+				<a href="https://www.instagram.com/jhonpabz/" target="_blank"> <i class="fab fa-instagram"></i></a>
+			</div>
+
+		<hr class="socket">
+		&copy; Jhon Pabz
+		</div> <!--- End of Row -->
+	</footer>
+
+</div>
+<!--- End of contact Section -->
+	
+
+<!--- Script Source Files -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+		offset: 400,
+		duration:1000
+	});
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="https://use.fontawesome.com/releases/v5.9.0/js/all.js"></script>
+<!--- End of Script Source Files -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script> -->
+<script src="app.js"></script>
+</body>
+</html>
+
+
+
+

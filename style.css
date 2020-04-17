@@ -1,0 +1,472 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  color: #fff;
+  background-color: #0b0c10;
+}
+
+.offset:before {
+  height: 3.8rem;
+  margin-top: -3.8rem;
+  content: "";
+  display: block;
+}
+
+/* -- Navbar -- */
+.navbar {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.navbar-brand img {
+  height: 2rem;
+}
+
+.navbar-nav li {
+  padding-right: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #66fcf1;
+}
+
+/* -- Navbar Effect -- */
+
+/*nav {
+	justify-content: space-between;
+	display: flex;
+
+}*/
+/*.navbar-dark .navbar-nav .nav-item .nav-link:lastchild {
+	margin: 0;
+}*/
+.navbar-dark .navbar-nav .nav-item .nav-link {
+  position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link::before,
+.navbar-dark .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #66fcf1;
+  left: 0;
+  transform: scaleX(0);
+  transition: all 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-item .nav-link::before {
+  top: 0;
+  transform-origin: left;
+}
+.navbar-dark .navbar-nav .nav-item .nav-link::after {
+  bottom: 0;
+  transform-origin: right;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::before,
+.navbar-dark .navbar-nav .nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* -- Font Color -- */
+.textblue {
+  color: #66fcf1;
+}
+/* -- Slider -- */
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 38%;
+  text-transform: uppercase;
+  width: 100%;
+  right: 0;
+  left: 2rem;
+}
+
+.carousel-caption h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+.carousel-caption h3 {
+  font-size: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+.btn-lg {
+  border-width: medium;
+  border-radius: 0;
+  font-size: 1.6rem;
+}
+/*.btn-lg:hover {
+	background-color: #66fcf1;
+}*/
+#carousel2.carousel-caption h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+  text-shadow: 0.1rem 0.1rem 0.8rem black;
+  padding-bottom: 1rem;
+}
+
+#carousel2.carousel-caption h3 {
+  font-size: 1.7rem;
+  text-shadow: 0.1rem 0.1rem 0.5rem black;
+  padding-bottom: 1.6rem;
+}
+
+/* -- About -- */
+#about {
+  background-color: #0b0c10;
+}
+#about #ab {
+  height: 600px;
+}
+
+#aboutpic {
+  height: 750px;
+}
+/*.big {
+	font-size: 6rem;
+	font-weight: 700;
+	padding-top: 1rem;
+}*/
+h2.mb-4 {
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+span.cv {
+  font-weight: 700;
+  color: white;
+}
+
+span.info {
+  color: #c5c6c7;
+  padding-bottom: 1rem;
+}
+span#cvn {
+  padding-left: 80px;
+}
+span#cvd {
+  padding-left: 30px;
+}
+span#cva {
+  padding-left: 63px;
+}
+span#cvz {
+  padding-left: 60px;
+}
+span#cve {
+  padding-left: 84px;
+}
+span#cvc {
+  padding-left: 76px;
+}
+
+/* -- Parallax Window -- */
+.parallax-window {
+  padding: 50px 155px;
+  background: transparent;
+}
+
+.imgparallax {
+  z-index: 2;
+  position: relative;
+  height: 180px;
+  /*margin-top: 50px;*/
+}
+
+/* -- Skills -- */
+#skills {
+  background-image: url(img/skills3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #0b0c10;
+  height: 800px;
+  color: white;
+}
+
+/*--------Projects---------*/
+.project-margin {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#projects h1 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3.5rem;
+  font-weight: 700;
+  padding-top: 1rem;
+}
+
+.single-works {
+  margin-bottom: 30px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease 0s;
+  box-shadow: 5px 5px 15px #000;
+}
+
+.single-works img {
+  width: 100%;
+  height: 330px;
+}
+
+.single-works .title {
+  font-size: 25px;
+  font-weight: 700;
+  color: #66fcf1;
+  margin: 0 0 15px 0;
+}
+.overlay-text .post {
+  display: block;
+  font-weight: 600;
+  font-size: 20px;
+  color: #fff;
+}
+.single-works .overlay-text {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 20%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.6s ease 0s;
+}
+
+.single-works .overlay-text:before {
+  border-left: 1px solid rgba(255, 255, 255, 0.9);
+  border-right: 1px solid rgba(255, 255, 255, 0.9);
+  left: 30px;
+  right: 30px;
+}
+
+.single-works .overlay-text:after {
+  border-top: 1px solid rgba(255, 255, 255, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  top: 30px;
+  bottom: 30px;
+}
+
+.single-works .overlay-text:before,
+.single-works .overlay-text:after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  top: 20px;
+  bottom: 20px;
+  opacity: 0;
+  z-index: 1;
+  transform: scale(1.5);
+  transition: all 0.6s ease 0.2s;
+}
+
+.single-works:hover {
+  transform: translateY(-8px);
+}
+
+.single-works:hover .overlay-text {
+  opacity: 1;
+}
+
+/*ok na dito*/
+/*dagdag effects*/
+.single-works:hover .overlay-text:before,
+.single-works:hover .overlay-text:after {
+  opacity: 1;
+  transform: scale(1);
+}
+
+#projects {
+  background-color: #222629;
+}
+
+.text {
+  color: #8f9396;
+}
+
+/* -- Portfolio -- */
+.jumbotron {
+  border-radius: 0;
+  padding: 3rem 0 2rem;
+  margin-bottom: 0;
+}
+
+h3.heading {
+  font-size: 1.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 1.9rem;
+}
+.heading-underline {
+  width: 3rem;
+  height: 0.2rem;
+  background-color: #66fcf1;
+  margin: 0 auto 2rem;
+}
+
+.portfolio img {
+  max-width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.row.no-padding [class*="col-"] {
+  padding: 0;
+}
+
+.portfolio img:hover {
+  transform: scale(1.1);
+  cursor: zoom-in;
+}
+
+.portfolio {
+  overflow: hidden;
+}
+
+/* -- Team -- */
+.card {
+  margin: 2rem;
+}
+
+/* -- Contact -- */
+footer {
+  background-color: #40474e;
+  color: white;
+  padding: 2rem 0 3rem;
+  margin-top: 1rem;
+}
+
+footer img {
+  height: 3rem;
+  margin: 1.5rem 0;
+}
+
+footer a {
+  color: white;
+}
+
+footer svg.svg-inline--fa {
+  font-size: 1.6rem;
+  margin: 1.2rem 0.5rem 0 0;
+}
+
+footer svg.svg-inline--fa:hover {
+  color: #1ebba3;
+}
+
+hr.socket {
+  border-top: 0.2rem solid #666b71;
+  width: 100%;
+}
+
+/*============= COURSE SECTION =============*/
+
+.narrow {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.btn-md {
+  border-width: medium;
+  border-radius: 0;
+  padding: 0.6rem 1.1rem;
+  text-transform: uppercase;
+  margin: 1rem;
+}
+
+/* -- Media Queries -- */
+@media (max-width: 767px) {
+  .carousel-caption h1 {
+    font-size: 2.3rem;
+    letter-spacing: 0.15rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .btn-lg {
+    font-size: 1rem;
+  }
+  .narrow h1 {
+    font-size: 1.5rem;
+  }
+  p.lead {
+    font-size: 1rem;
+  }
+  #carousel2.carousel-caption h1 {
+    font-size: 1.6rem;
+
+    letter-spacing: 0.1rem;
+
+    padding-bottom: 0.5rem;
+  }
+
+  #carousel2.carousel-caption h3 {
+    font-size: 1.1rem;
+
+    padding-bottom: 1.1rem;
+  }
+  .parallax-window {
+    padding: 25px 185px;
+    background: transparent;
+  }
+  .imgparallax {
+    z-index: 2;
+    position: relative;
+    height: 120px;
+    /*margin-top: 50px;*/
+  }
+}
+
+/*============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============*/
